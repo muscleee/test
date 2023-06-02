@@ -34,6 +34,8 @@ public void StartTrigger()
 其中，uEye.Camera內所含為IDS的uEyeDotNet.dll所提供的相機操作相關指令  
 最後由m_uCamera.Focus.Trigger()使相機對焦
 
+***
+
 ## 新相機串接方式
 1.  安裝新相機驅動
 2.	檢查是否uEyeDotNet.dll所提供的相機指令是否能適用，若不能則須新增參考新版相機指令dll
