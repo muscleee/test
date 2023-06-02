@@ -16,26 +16,23 @@ Demo Tool 程式使用說明
 -	AISVision_DemoTooll\src\MVVM\Model\CameraModel.cs : 相機指令 (UI端)
 -	AISVision_DemoTool_Function\src\Model\Camera.cs : 操控相機運作程式 (model端)
 
-由UI端觸發相機指令後，會在model端執行相機運作的程式
-
-### 範例
+由UI端觸發相機指令後，會在model端執行相機運作的程式，以下為對焦程式範例
 
 ### CameraModel.cs
-
-StartCameraFocus()  
+public void StartCameraFocus()  
 {  
 &emsp; this.m_cameraIds.StartTrigger();  
 }
 
 ### Camera.cs
-
-StartTrigger()  
+private uEye.Camera m_uCamera;  
+public void StartTrigger()  
 {  
 &emsp; m_uCamera.Focus.Trigger();  
 }
 
-其中，uEye.Camera內所含為IDS的uEyeDotNet.dll所提供的相機操作相關指令
-
+其中，uEye.Camera內所含為IDS的uEyeDotNet.dll所提供的相機操作相關指令  
+最後由m_uCamera.Focus.Trigger()使相機對焦
 
 ## 新相機串接方式
 1.  安裝新相機驅動
