@@ -37,7 +37,7 @@ public void StartTrigger()
 ## 新相機串接方式
 1.  安裝新相機驅動
 2.	檢查是否uEyeDotNet.dll所提供的相機指令是否能適用，若不能則須新增參考新版相機指令dll
-3.	使用該相機適用之dll內的指令，替換掉Camera.cs
+3.	使用該相機適用之dll內的指令，替換掉Camera.cs相關指令
     - 如在範例中，僅須替換掉camera.cs中的m_uCamera.Focus.Trigger()
     - 替換後可以在UI測試相機指令是否正常
 4.	若程式差異過大，可在model端新增NewCamera.cs，並修改如範例中m_cameraIds.StopTrigger()
