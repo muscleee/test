@@ -31,7 +31,7 @@ public void StartTrigger()
 &emsp; m_uCamera.Focus.Trigger();  
 }
 
-其中，uEye.Camera內所含為IDS的uEyeDotNet.dll所提供的相機操作相關指令  
+其中，uEye.Camera內所含為IDS(目前使用的相機)的uEyeDotNet.dll所提供的相機操作相關指令  
 最後由m_uCamera.Focus.Trigger()使相機對焦
 
 ***
